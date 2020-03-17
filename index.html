@@ -1,27 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Alvaro Gonzalez Ferrer - developer page</title>
-  </head>
-  <body>
-    <div class="container">
+  <title>Alvaro Gonzalez Ferrer - developer page</title>
+</head>
+<body>
+  <div class="container">
     <h1>Alvaro Gonzalez Ferrer</h1>
+
+    <p>
+      Thanks for visiting my page!
+      <br>
+      Im Alvaro, also known as Krono, Kronopio and many others "noms de guerre".
+      <br>
+      Have been developing software since I was a kid, starting in a old Commodore 64.
+      <br>
+      Worked many years as indie game developer, and also game developer for some very known game studios.
+      <br>
+      I often release source code of my projects, when I have the proper license to do so. Many others of my projects are secret, or protected by intellectual rights, and I cannot release them, so thanks for asking, but no ;)
+    </p>
 
     <p>
       Dont forget to check my old sourceforge user, KRONOPIO!
     </p>
     <p>
-Lots of cool stuff there, Im migrating it to GitHub
-</p>
-<p>
-<a href='https://sourceforge.net/u/kronopio/profile/'>KRONOPIO SOURCEFORGE</a>
+      Lots of cool stuff there, Im migrating it to GitHub
+    </p>
+    <p>
+      <a href='https://sourceforge.net/u/kronopio/profile/'>KRONOPIO SOURCEFORGE</a>
 
     </p>
 
@@ -29,144 +41,144 @@ Lots of cool stuff there, Im migrating it to GitHub
 
     <canvas id="c" width="800" height="600"></canvas>
 
-<script>
-        // efecto matrix
-        // canvas
-        var c = document.getElementById("c");
-        var ctx = c.getContext("2d");
+    <script>
+    // efecto matrix
+    // canvas
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d");
 
 
-        // mensaje de acerca de...
-        var mensaje = [
-        "Alvaro 'Kronoman' Gonzalez",
-        "Since 1982, doing quality software.",
-        "El artesano del software.",
-        "En memoria de mi querido padre.",
-        "En memoria de mi querido padre.",
-        "",
-        "HENDERSON",
-        "ARGENTINA",
-        "",
-        ""
-        ];
+    // mensaje de acerca de...
+    var mensaje = [
+      "Alvaro 'Kronoman' Gonzalez",
+      "Since 1982, doing quality software.",
+      "El artesano del software.",
+      "En memoria de mi querido padre.",
+      "En memoria de mi querido padre.",
+      "",
+      "HENDERSON",
+      "ARGENTINA",
+      "",
+      ""
+    ];
 
-        var mensaje_i = 0; // mensaje actual
-        var mensaje_d = 90; // duracion en frames de cada mensaje
-        var mensaje_t = mensaje_d; // temporizador de mensaje
-        // posicion y movimiento del mensaje
-        var m_x = 0;
-        var m_y = 0;
-        var m_dx = Math.random()*10 + 4;
-        var m_dy = Math.random()*20 + 4;
-
-
-        // letras para el fondo
-        var matrix = "01";
-        //convertir la cadena en un array de caracteres
-        matrix = matrix.split("");
-
-        var font_size = 20;
-        var columns = c.width/font_size; // columnas para la lluvia
-
-        // array de gotas, uno por cada columna
-        var drops = [];
-        //x = coordenada x
-        //1 = coordenada Y inicial, la misma para cada gota al principio
-        for(var x = 0; x < columns; x++)
-            drops[x] = 1;
-
-        // texto de creditos
-        var gradient = ctx.createLinearGradient(0, 0, c.width, c.height); // gradiente en toda la pantalla
-        gradient.addColorStop("0"," magenta");
-        gradient.addColorStop("0.5", "blue");
-        gradient.addColorStop("1.0", "green");
+    var mensaje_i = 0; // mensaje actual
+    var mensaje_d = 90; // duracion en frames de cada mensaje
+    var mensaje_t = mensaje_d; // temporizador de mensaje
+    // posicion y movimiento del mensaje
+    var m_x = 0;
+    var m_y = 0;
+    var m_dx = Math.random()*10 + 4;
+    var m_dy = Math.random()*20 + 4;
 
 
-        // entrar y salir de fullscreen
-        // https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
-        function toggleFullScreen()
-        {
-            if (!document.fullscreenElement)
-                document.documentElement.requestFullscreen();
-            else
-                if (document.exitFullscreen)
-                    document.exitFullscreen();
-        }
+    // letras para el fondo
+    var matrix = "01";
+    //convertir la cadena en un array de caracteres
+    matrix = matrix.split("");
 
-        // pedir entrar full screen si hace click en el canvas
-        c.addEventListener('click', function() { toggleFullScreen(); }, false);
+    var font_size = 20;
+    var columns = c.width/font_size; // columnas para la lluvia
 
+    // array de gotas, uno por cada columna
+    var drops = [];
+    //x = coordenada x
+    //1 = coordenada Y inicial, la misma para cada gota al principio
+    for(var x = 0; x < columns; x++)
+    drops[x] = 1;
 
-        //dibujar la lluvia
-        function draw()
-        {
-            //fondo negro para canvas
-            //transparente para dejar una estela
-            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
-            ctx.fillRect(0, 0, c.width, c.height);
-
-            ctx.fillStyle = "#0A0"; //texto verde
-            ctx.font = font_size + "px arial";
-
-            //loop de gotas
-            for(var i = 0; i < drops.length; i++)
-            {
-                //caracter al azar
-                var text = matrix[Math.floor(Math.random()*matrix.length)];
-                //x = i*font_size, y = tamano gotas[i]*font_size
-                ctx.fillText(text, i*font_size, drops[i]*font_size);
-
-                // mandar la gota arriba al azar cuando llega abajo
-                // agregar azar hace que las gotas se dispersen
-                if(drops[i]*font_size > c.height && Math.random() > 0.975)
-                    drops[i] = 0;
-
-                //bajar la coordenada Y
-                drops[i]++;
-            }
-
-            // texto krono
-            ctx.font = "40px Verdana";
-            ctx.fillStyle = gradient;
-            ctx.fillText(mensaje[mensaje_i], m_x, m_y); // estela con gradiente
-            mensaje_t--;
-            if (mensaje_t<1)
-            {
-                mensaje_t = mensaje_d;
-                mensaje_i++;
-                if (mensaje_i>mensaje.length-1)
-                    mensaje_i=0;
-            }
-
-            m_x += m_dx;
-            m_y += m_dy;
-
-            // rebotar
-
-            if (m_x > c.width - ctx.measureText(mensaje[mensaje_i]).width)
-                        m_dx = -(Math.random()*15  + 2);
-
-            if (m_y > c.height)
-                        m_dy = -(Math.random()*15 + 2);
-
-            if (m_x < 0)
-                    m_dx = Math.random()*15 + 2;
-
-            if (m_y < 0)
-                    m_dy = Math.random()*15 + 2;
-
-            // escribir en la nueva posicion en blanco, asi se lee
-            //ctx.strokeStyle = 'white';
-            ctx.fillStyle = "white";
-            ctx.fillText(mensaje[mensaje_i], m_x, m_y);
-            //ctx.strokeText(mensaje[mensaje_i], m_x, m_y);
-
-        }
-
-        setInterval(draw, 35);
+    // texto de creditos
+    var gradient = ctx.createLinearGradient(0, 0, c.width, c.height); // gradiente en toda la pantalla
+    gradient.addColorStop("0"," magenta");
+    gradient.addColorStop("0.5", "blue");
+    gradient.addColorStop("1.0", "green");
 
 
-        </script>
-</div>
-  </body>
+    // entrar y salir de fullscreen
+    // https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
+    function toggleFullScreen()
+    {
+      if (!document.fullscreenElement)
+      document.documentElement.requestFullscreen();
+      else
+      if (document.exitFullscreen)
+      document.exitFullscreen();
+    }
+
+    // pedir entrar full screen si hace click en el canvas
+    c.addEventListener('click', function() { toggleFullScreen(); }, false);
+
+
+    //dibujar la lluvia
+    function draw()
+    {
+      //fondo negro para canvas
+      //transparente para dejar una estela
+      ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+      ctx.fillRect(0, 0, c.width, c.height);
+
+      ctx.fillStyle = "#0A0"; //texto verde
+      ctx.font = font_size + "px arial";
+
+      //loop de gotas
+      for(var i = 0; i < drops.length; i++)
+      {
+        //caracter al azar
+        var text = matrix[Math.floor(Math.random()*matrix.length)];
+        //x = i*font_size, y = tamano gotas[i]*font_size
+        ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+        // mandar la gota arriba al azar cuando llega abajo
+        // agregar azar hace que las gotas se dispersen
+        if(drops[i]*font_size > c.height && Math.random() > 0.975)
+        drops[i] = 0;
+
+        //bajar la coordenada Y
+        drops[i]++;
+      }
+
+      // texto krono
+      ctx.font = "40px Verdana";
+      ctx.fillStyle = gradient;
+      ctx.fillText(mensaje[mensaje_i], m_x, m_y); // estela con gradiente
+      mensaje_t--;
+      if (mensaje_t<1)
+      {
+        mensaje_t = mensaje_d;
+        mensaje_i++;
+        if (mensaje_i>mensaje.length-1)
+        mensaje_i=0;
+      }
+
+      m_x += m_dx;
+      m_y += m_dy;
+
+      // rebotar
+
+      if (m_x > c.width - ctx.measureText(mensaje[mensaje_i]).width)
+      m_dx = -(Math.random()*15  + 2);
+
+      if (m_y > c.height)
+      m_dy = -(Math.random()*15 + 2);
+
+      if (m_x < 0)
+      m_dx = Math.random()*15 + 2;
+
+      if (m_y < 0)
+      m_dy = Math.random()*15 + 2;
+
+      // escribir en la nueva posicion en blanco, asi se lee
+      //ctx.strokeStyle = 'white';
+      ctx.fillStyle = "white";
+      ctx.fillText(mensaje[mensaje_i], m_x, m_y);
+      //ctx.strokeText(mensaje[mensaje_i], m_x, m_y);
+
+    }
+
+    setInterval(draw, 35);
+
+
+    </script>
+  </div>
+</body>
 </html>
