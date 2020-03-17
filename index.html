@@ -11,24 +11,27 @@
     <title>Alvaro Gonzalez Ferrer - developer page</title>
   </head>
   <body>
+    <div class="container">
     <h1>Alvaro Gonzalez Ferrer</h1>
-    
+
     <p>
-      Dont forget to check my old sourceforge user!
-<br>
+      Dont forget to check my old sourceforge user, KRONOPIO!
+    </p>
+    <p>
 Lots of cool stuff there, Im migrating it to GitHub
-<br>
-https://sourceforge.net/u/kronopio/profile/
+</p>
+<p>
+<a href='https://sourceforge.net/u/kronopio/profile/'>KRONOPIO SOURCEFORGE</a>
 
     </p>
-    
+
     <p>Welcome to my website. Under construction</p>
-    
+
     <canvas id="c" width="800" height="600"></canvas>
 
 <script>
         // efecto matrix
-        // canvas 
+        // canvas
         var c = document.getElementById("c");
         var ctx = c.getContext("2d");
 
@@ -45,7 +48,7 @@ https://sourceforge.net/u/kronopio/profile/
         "ARGENTINA",
         "",
         ""
-        ]; 
+        ];
 
         var mensaje_i = 0; // mensaje actual
         var mensaje_d = 90; // duracion en frames de cada mensaje
@@ -70,29 +73,29 @@ https://sourceforge.net/u/kronopio/profile/
         //x = coordenada x
         //1 = coordenada Y inicial, la misma para cada gota al principio
         for(var x = 0; x < columns; x++)
-            drops[x] = 1; 
+            drops[x] = 1;
 
         // texto de creditos
         var gradient = ctx.createLinearGradient(0, 0, c.width, c.height); // gradiente en toda la pantalla
         gradient.addColorStop("0"," magenta");
         gradient.addColorStop("0.5", "blue");
-        gradient.addColorStop("1.0", "green");        
+        gradient.addColorStop("1.0", "green");
 
 
         // entrar y salir de fullscreen
         // https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
-        function toggleFullScreen() 
+        function toggleFullScreen()
         {
-            if (!document.fullscreenElement) 
+            if (!document.fullscreenElement)
                 document.documentElement.requestFullscreen();
-            else 
-                if (document.exitFullscreen) 
-                    document.exitFullscreen(); 
+            else
+                if (document.exitFullscreen)
+                    document.exitFullscreen();
         }
 
         // pedir entrar full screen si hace click en el canvas
         c.addEventListener('click', function() { toggleFullScreen(); }, false);
-        
+
 
         //dibujar la lluvia
         function draw()
@@ -145,12 +148,12 @@ https://sourceforge.net/u/kronopio/profile/
 
             if (m_y > c.height)
                         m_dy = -(Math.random()*15 + 2);
-            
+
             if (m_x < 0)
-                    m_dx = Math.random()*15 + 2; 
+                    m_dx = Math.random()*15 + 2;
 
             if (m_y < 0)
-                    m_dy = Math.random()*15 + 2; 
+                    m_dy = Math.random()*15 + 2;
 
             // escribir en la nueva posicion en blanco, asi se lee
             //ctx.strokeStyle = 'white';
@@ -162,8 +165,8 @@ https://sourceforge.net/u/kronopio/profile/
 
         setInterval(draw, 35);
 
-        
-        </script>
 
+        </script>
+</div>
   </body>
 </html>
