@@ -301,14 +301,16 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
 <br>Bonus track :P<br>
 
 <!-- TODO do this canvas responsive to screen size, maybe add some mini game custom made -->
-    <canvas id="c" width="800" height="600"></canvas>
+    <canvas id="responsive-canvas" style="width: 100%;"></canvas>
 
     <script>
-    // efecto matrix
-    // canvas
-    var c = document.getElementById("c");
-    var ctx = c.getContext("2d");
+    // matrix effect on canvas
+    var c = document.getElementById("responsive-canvas");
+    // set height according to size of window
+    // TODO - this needs to adapt if the window chances size!!
+    c.height = c.width * 0.75; // ratio 800x600 screen 0,75
 
+    var ctx = c.getContext("2d");
 
     // mensaje de acerca de...
     var mensaje = [
@@ -333,13 +335,12 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
     var m_dx = Math.random()*10 + 4;
     var m_dy = Math.random()*20 + 4;
 
-
     // letras para el fondo
     var matrix = "01";
     //convertir la cadena en un array de caracteres
     matrix = matrix.split("");
 
-    var font_size = 20;
+    var font_size = c.width/40;
     var columns = c.width/font_size; // columnas para la lluvia
 
     // array de gotas, uno por cada columna
@@ -355,7 +356,6 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
     gradient.addColorStop("0.5", "blue");
     gradient.addColorStop("1.0", "green");
 
-
     // entrar y salir de fullscreen
     // https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
     function toggleFullScreen()
@@ -369,7 +369,6 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
 
     // pedir entrar full screen si hace click en el canvas
     c.addEventListener('click', function() { toggleFullScreen(); }, false);
-
 
     //dibujar la lluvia
     function draw()
@@ -400,7 +399,7 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
       }
 
       // texto krono
-      ctx.font = "40px Verdana";
+      ctx.font = (c.width/40) + "px Verdana";
       ctx.fillStyle = gradient;
       ctx.fillText(mensaje[mensaje_i], m_x, m_y); // estela con gradiente
       mensaje_t--;
@@ -415,8 +414,7 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
       m_x += m_dx;
       m_y += m_dy;
 
-      // rebotar
-
+      // bounce
       if (m_x > c.width - ctx.measureText(mensaje[mensaje_i]).width)
       m_dx = -(Math.random()*15  + 2);
 
@@ -434,12 +432,9 @@ Very fast, low memory, low disk footprint, runs on very cheap hardware!
       ctx.fillStyle = "white";
       ctx.fillText(mensaje[mensaje_i], m_x, m_y);
       //ctx.strokeText(mensaje[mensaje_i], m_x, m_y);
-
     }
 
-    setInterval(draw, 35);
-
-
+    setInterval(draw, 35); // start the show!
     </script>
   </div>
 </body>
