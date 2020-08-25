@@ -12,7 +12,7 @@ If you want to help me continue with my work, you can donate via Bitcoin to my a
 
 **33Xh8YBQsMW8LGrnRR5wgEKXNzoaE5C95Q**
 
-![Wallet 33Xh8YBQsMW8LGrnRR5wgEKXNzoaE5C95Q](support_files/btc/wallet.png)
+![Wallet 33Xh8YBQsMW8LGrnRR5wgEKXNzoaE5C95Q](btc/wallet.png)
 
 **Thank you very much for your donation!**
 
