@@ -4,7 +4,7 @@ Hi, I'm Alvaro, senior freelance software developer, and Computer Science gradua
 
 I have many projects, please check them. I enjoy mostly coding videogames and repairing classic motorcycles.
 
-http://alvarogonzalezferrer.github.io/  <-- open in your web browser!
+https://alvarogonzalezferrer.github.io/  <-- open in your web browser!
 
 ## Donations
 
