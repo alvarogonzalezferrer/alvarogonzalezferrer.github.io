@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Álvaro González Ferrer - Portfolio - Developer</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Álvaro González Ferrer</h1>
+    <h2>Bachelor degree in Computer Science</h2>
+    <h2>software developer</h2>
+
+    <p>Hello, I'm Álvaro—also known in the gaming community as Krono, Kronopio, and by various other pseudonyms.</p>
+
+    <P>With a Bachelor's degree in Computer Science from Argentina and nearly two decades of experience in game development, I bring a wealth of expertise to the table. My journey began in childhood on an old Commodore 64, and has since evolved into a career that spans indie games to large-scale studios. In addition to game development, I have extensive experience in creating business software for small enterprises and developing translation engines.</P>
+    
+    <P>I’m passionate about sharing my work with the community, so I release the source code for my projects whenever licensing permits. However, some projects are protected by non-disclosure agreements, so they remain confidential.</P>
+    
+    <P>Thank you for visiting my page! Feel free to explore my repositories below, and check back often as I continually release new code.</P>
+
+    <p><a href="https://github.com/alvarogonzalezferrer" class="btn btn-primary btn-block" target='_blank'>GitHub</a>
+    </p>
+
+    <p><a href="https://sourceforge.net/u/kronopio/profile/" class="btn btn-primary btn-block"
+        target='_blank'>Sourceforge</a></p>
+
+    <p><a href="https://ar.linkedin.com/in/alvarogonzalezf" class="btn btn-primary btn-block"
+        target='_blank'>LinkedIn</a></p>
+
+    <p><a href="https://kronoman.itch.io/" class="btn btn-primary btn-block" target='_blank'>Itch.io</a>
+    </p>
+
+    <h2>Portfolio</h2>
+
+    <p>I have an extremely diverse project portfolio, but below are a few. The featured projects below are released
+      freely to the public, as open source software.</p>
+
+    <p>Skills include: C++, Java, Javascript, PHP, SQL server / MySQL, MongoDB, Node.js, Express, Angular.js, jQuery,
+      Bootstrap, HTML5, CSS, Pascal, BASIC, etc.</p>
+
+    <p>I'm a Linux expert and contributed to Debian, Ubuntu, Mint and more global repositories.</p>
+
+    <p>I can speak and write English, and Spanish.</p>
+
+    <div class="container">
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Control your phone from your computer
+            </div>
+            <img src="screens/scrcpy.jpg" class="card-img-top" alt="Android">
+            <div class="card-body">
+              <h5 class="card-title">Scrcpy light launcher</h5>
+              <p class="card-text">
+                Control your Android phone or device from your desktop PC using screen mirroring.
+                <br>
+                This is a very light, very fast, very easy and open source alternative.
+                <br>
+                I don't like bloated apps that depend on a million libraries to do simple things.
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/scrcpy_light_launcher" class="btn btn-primary mt-auto"
+              target='_blank'>Control your phone!</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Photo Organizer
+            </div>
+            <img src="screens/photo_org.jpg" class="card-img-top" alt="Photo Organizer">
+            <div class="card-body">
+              <h5 class="card-title">Photo Organizer</h5>
+              <p class="card-text">
+                Photo organizer for your local photo backups.
+                <br>
+                Copy photos to year / month and /day (optional) folders according to their EXIF data.
+                <br>
+                Automatically finds the original date taken of the photos and videos, and then sorts the photos or
+                videos into folders based on that date.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/photo_organizer" class="btn btn-primary mt-auto"
+              target='_blank'>Organize your photo backups!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Featured C++ game - Award winner
+            </div>
+            <img src="screens/kball.jpg" class="card-img-top" alt="KBall game">
+            <div class="card-body">
+              <h5 class="card-title">KBall</h5>
+              <p class="card-text">A game of skill and reflexes, non violent, suitable for all ages, hours of fun!
+                <br>
+                Move the ball around the level map, without falling, without running out of time, and getting the
+                prizes, in order to reach the exit. Full map editor included!<br>
+                Award winner at 2004 UTN (National Technological University) ADVA (Association of video game developers
+                of Argentina) match.
+                <br> Done in C++, closs platform.
+                <br> Works in MS DOS, Linux, Windows and more!
+                <br>Also available from Linux repositories like Ubuntu, Debian, etc
+              </p>
+            </div>
+
+            <a href="https://sourceforge.net/projects/kball/" class="btn btn-primary mt-auto" target='_blank'>Go to
+              KBall!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Featured C++ game
+            </div>
+            <img src="screens/kraptor.jpg" class="card-img-top" alt="Kraptor game">
+            <div class="card-body">
+              <h5 class="card-title">Kraptor</h5>
+              <p class="card-text">Old school space ship shooter, done in C++, closs platform.
+                Kraptor is a classic shoot 'em up scroller game, where you must fight against tons of bad dudes.
+                <br>
+                This is a full game with massive destruction, powerful weapons, and high speed action in varied levels.
+                <br>
+                Works in MS DOS, Linux, Windows and more! You can also download it from Linux repositories like Ubuntu,
+                Debian, etc
+              </p>
+            </div>
+
+            <a href="https://sourceforge.net/projects/kraptor/" class="btn btn-primary mt-auto" target='_blank'>Get
+              Kraptor!</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Gift for a friend.
+            </div>
+            <img src="screens/nacho.jpg" class="card-img-top" alt="Nacho game">
+            <div class="card-body">
+              <h5 class="card-title">Nacho Blaster</h5>
+              <p class="card-text">A gift game for a friend, Nacho. Coded in C++ and Allegro.
+                <br>All graphics, sound, music, etc done by me.
+                <br>Features a very interesting particle and explosion engine. Very fast algorithms too.
+                <br>A work of friendship, was done from scratch in about one week. Includes sound, very cool effects and
+                graphics.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/Blast-Nacho" class="btn btn-primary mt-auto"
+              target='_blank'>Nacho BLASTER!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Old school graphic adventure engine
+            </div>
+            <img src="screens/aventura.jpg" class="card-img-top" alt="Adventure game">
+            <div class="card-body">
+              <h5 class="card-title">Graphical adventure</h5>
+              <p class="card-text">This is not only a graphic adventure in the style of old Lucasarts classics, but also
+                a ENGINE and special language developed to make graphics adventures.
+                This was coded when I was 16 years old using a 486 and mostly ASIC and ASSEMBLER.
+                Programmed around 1998-1999, inspired on Full Throttle and many more adventures (Loom, Day of the
+                Tentacle, etc)
+                <br>
+                The engine has its own scripting language, which allows creating generic graphic adventures.
+                <br>
+                Very inspired by old text adventures, and LucasArts games
+                <br>
+                To play it, use MS-DOS, or an emulator like DOSBOX ... there are compiled binaries and two graphic
+                adventures, a short demo, and a complete graphic adventure to play!
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/aventura_grafica" class="btn btn-primary mt-auto"
+              target='_blank'>Time for adventure!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Arcade classic, re done for fun.
+            </div>
+            <img src="screens/kronoide.jpg" class="card-img-top" alt="Kronoide game">
+            <div class="card-body">
+              <h5 class="card-title">Kronoide</h5>
+              <p class="card-text">
+                A Breakout / Arkanoide game. Can be played using DOSBOX.
+                <br>
+                Breakout is an arcade game developed and published by Atari, Inc., and released on May 13, 1976. It was
+                conceptualized by Nolan Bushnell and Steve Bristow, influenced by the seminal 1972 Atari arcade game
+                Pong, and built by Steve Wozniak, aided by Steve Jobs.
+                <br>
+                Breakout was the basis and inspiration for certain aspects of the Apple II personal computer. In 1978,
+                the game was ported to the Atari 2600 and a sequel was made, Super Breakout, which four years later
+                became the "pack-in game" for the Atari 5200 console. Breakout spawned an entire genre of Breakout
+                clones, and the concept found new legs with Taito's 1986 Arkanoid, which itself spawned dozens of
+                imitators.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/kronoide" class="btn btn-primary mt-auto"
+              target='_blank'>Retro fun awaits!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Artillery game for up to 10 players.
+            </div>
+            <img src="screens/ktank.jpg" class="card-img-top" alt="KTank game">
+            <div class="card-body">
+              <h5 class="card-title">KTank</h5>
+              <p class="card-text">Artillery game for up to 10 players. Input angle and power and try to destroy your
+                opponents.
+                <br>
+                Features randomly generated destroyable terrain, up to 10 players in hot seat setup.
+                <br>
+                A very fun game to play on a rainy day!
+                <br>
+                To play it, use MS-DOS, or an emulator like DOSBOX ...
+                <br>Note, there used to be a version that lets you play against the computer too (and not only humans),
+                sadly was lost in some crashed diskettes. Will be re-done soon.
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/ktank" class="btn btn-primary mt-auto" target='_blank'>Play
+              with friends!</a>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Light weight data grip for PHP and MySQL
+            </div>
+            <img src="screens/datagrid.jpg" class="card-img-top" alt="Datagrid">
+            <div class="card-body">
+              <h5 class="card-title">KronoDataGrid</h5>
+              <p class="card-text">
+                I needed a lightweight data grid for some commercial projects, and all were very bloated and expensive,
+                so I developed this super light weight data grid.
+                <br>
+                Useful things in this project:
+              <ul>
+                <li>A data grid with editable tools, kronoDataGrid.php</li>
+                <li>RANDOM name and surname generator for your projects, in install/index.php and supporting files.</li>
+                <li>Lightweight MySQL connect wrapper - Check connectMySQL.php</li>
+              </ul>
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/kronodatagrid" class="btn btn-primary mt-auto"
+              target='_blank'>Datagrid for you!</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Affordable ERP system for small companies
+            </div>
+            <img src="screens/burocracia.jpg" class="card-img-top" alt="ERP system">
+            <div class="card-body">
+              <h5 class="card-title">ERP system</h5>
+              <p class="card-text">
+                In house 100% developed from scratch ERP (enterprise resource planning) for small companies at Buenos
+                Aires.
+                <br>
+                The system manages all for the company: clients, reports, roadmaps, business resources, orders,
+                receipts, purchase orders, and payroll.
+                <br>
+                Developed from scratch using PHP, MySQL, HTML5, Javascript and CSS, running on a Linux Apache web
+                server,
+                <br>
+                This system really improved the productivity of the small company, maximizing their profits and reducing
+                costs. The ERP system integrates varied organizational systems and facilitates error-free transactions
+                and production, thereby enhancing the organization's efficiency.
+                <br>
+                Soon I will be releasing original source code from this project, a total open source ERP solution, 100%
+                developed by me, specially targeted to small companies that can't afford very costly solutions like SAP,
+                Oracle, IBM, etc solutions...
+                <br><br>
+                NOTE: all data shown on screenshoot is fictional RANDOM data generated for a test system. No private
+                data was shown.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/" class="btn btn-primary mt-auto" target='_blank'>Coming
+              soon!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Guitar and string instrument scales, afination and chords.
+            </div>
+            <img src="screens/guitar.jpg" class="card-img-top" alt="Guitar">
+            <div class="card-body">
+              <h5 class="card-title">GNUitarra</h5>
+              <p class="card-text">
+                Krono's GNUitarra is a light-fast, all-in-one helper for the guitar and string instrument musical
+                player.
+                <br>
+                Supports lots of instruments!
+                <br>
+                Guitarra, bajo, Balalaika, bandola, banjo, Bozouki, Cavaquinho,Charango, cuatro, dulcimer, guitarra
+                portuguesa, guitarron, hawayana, flamenca, jarana, laud, mandola, mandolina, sitar, timple, tres,
+                ukelele, vihuela, etc
+                <br>
+                Has more than +4000 scale types, +60 chord types, +60 string instruments (i.e bass).
+                <br>
+                Can automake solos, learning excersises, etc.
+                <br>
+                Works even in a 386! For MS-DOS, Windows, Linux
+                <br>
+                Very fast, low memory, low disk footprint, runs on very cheap hardware!
+                <br>
+                +4000 scales
+                <br>
+                +60 chord types
+                <br>
+                +60 instruments: guitarra, bajo, Balalaika, bandola, banjo, Bozouki, Cavaquinho,Charango, cuatro,
+                dulcimer, guitarra portuguesa, guitarron, hawayana, flamenca, jarana, laud, mandola, mandolina, sitar,
+                timple, tres, ukelele, vihuela, etc
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/kronognuguitarra" class="btn btn-primary mt-auto"
+              target='_blank'>Time for a virtuous solo!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Operating system for very old computers.
+            </div>
+            <img src="screens/krjr.jpg" class="card-img-top" alt="Desktop">
+            <div class="card-body">
+              <h5 class="card-title">Kr Jr</h5>
+              <p class="card-text">
+                Once upon a time, I coded a GUI operating system for old computers.<br>
+                Never finished this huge project, but it is in a stage where it runs and can be tested on old computers
+                or a virtual machine.<br>
+                You have a working desktop, a working boot sequence and can run MS DOS software and games.<br>
+                It is SUPER FAST. Even running on a virtual machine emulator, it will work fast. Mostly C and Assembler
+                code.<br>
+                It can run even in a 386 with 1mb RAM and no HD
+                It fits on a diskette! Recycle your old PC! Inspired on micro kernels such as QNX, but the code is 100%
+                my production, not based on any other kernels.
+              </p>
+            </div>
+            <a href="https://sourceforge.net/projects/kronojunior/" class="btn btn-primary mt-auto"
+              target='_blank'>Retro fun!</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Tank battle for two players.
+            </div>
+            <img src="screens/kronobz.gif" class="card-img-top" alt="Krono's Battle Zone">
+            <div class="card-body">
+              <h5 class="card-title">Krono's Battle Zone</h5>
+              <p class="card-text">
+                Tank battle for 2 players, split-screen, hot-seat, or vs computer.
+                <br>
+              <ul>
+                <li>up to 2 players, split-screen or versus computer</li>
+                <li>weather effects: rain, snow, day / night, fog, sand storm, hail storm, etc</li>
+                <li>power ups : shield, weapons, radar, repairs, etc</li>
+                <li>terrain can be destroyed!</li>
+                <li>random terrain : grass, snow, sand, mud, etc</li>
+                <li>huge random battle zone</li>
+              </ul>
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/krono_battle_zone" class="btn btn-primary mt-auto"
+              target='_blank'>Get a friend to play!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              College notes: Spanish content. CONTENIDO EN ESPAÑOL.
+            </div>
+            <img src="screens/uade.jpg" class="card-img-top" alt="UADE">
+            <div class="card-body">
+              <h5 class="card-title">College notes</h5>
+              <p class="card-text">
+                All my notes during my university career, Bachelor of Computer Science, UADE, Argentina.
+                <br>
+                Released for the benefit of humanity, and especially future colleagues.
+                <br>
+                I am always ready to share the information, and help future professionals.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/UADE_apuntes_licenciatura_informatica"
+              class="btn btn-primary mt-auto" target='_blank'>Get your notes!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              HODL!
+            </div>
+            <img src="screens/arbolito.jpg" class="card-img-top" alt="krono_arbolito_bitso">
+            <div class="card-body">
+              <h5 class="card-title">Bitcoin Swiss Army Knife</h5>
+              <p class="card-text">
+                Experimental currency converter, by buying cryptocurrencies, using the Bitso exchange.
+                <br>
+                Serves for Argentine peso ARS, and US dollar USD.
+                <br>
+                It also allows you to place buy and sell orders, and see the economic indicators.
+                <br>
+                It is much more efficient and faster than entering the app or the website, since we can do
+                everything from the command console quickly.
+                <br>
+                This software is my answer to the economic collapse that Argentina is facing, and to try to avoid
+                the hyperinflation.
+                <br>
+                Spanish content ahead - Python Code.
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/krono_arbolito_bitso" class="btn btn-primary mt-auto"
+              target='_blank'>TO THE MOON!</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Spanish MySQL
+            </div>
+            <img src="screens/espanol_mysql.jpg" class="card-img-top" alt="espanol_mysql">
+            <div class="card-body">
+              <h5 class="card-title">Spanish characters and MySQL</h5>
+              <p class="card-text">
+                How to correctly enter the special characters of the Spanish language to MySQL.
+                <br>
+                Many times we find databases that have entries like "Rubén", "Julián" stored as "RubÃ©n", "JuliÃ¡n",
+                or similar things where the data is apparently corrupt.
+                <br>
+                In this document we are going to explore the solution to this problem.
+                <br>
+                Spanish content ahead! - MySQL, PHP
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/espanol_en_mysql" class="btn btn-primary mt-auto"
+              target='_blank'>Spanish MySQL</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Computer technician guide
+            </div>
+            <img src="screens/tech.jpg" class="card-img-top" alt="Tech">
+            <div class="card-body">
+              <h5 class="card-title">Computer technician guide</h5>
+              <p class="card-text">
+                A computer technician guide to repair your friends and family computer. You are "the" tech guy in
+                the family, don't you?
+                <br>
+                One of the hallmarks of our age is the decline of the do-it-yourselfer in favor of the
+                hire-an-expert-to-do-it-insteader. Toilet not flushing? Hire a plumber. Porch falling down? Hire a
+                carpenter. Lights on the blink? Hire an electrician.
+                <br>
+                You could argue, as many people have done, that a return to a DIY ethos would be good for society
+                and good for the soul. I like to DIY. Also, I'm a Computer Science graduate, so I get often called
+                as "the" tech guy in family and circle of friends.
+              </p>
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/computer_technician_guide" class="btn btn-primary mt-auto"
+              target='_blank'>Repair your devices!</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Full stack development notes
+            </div>
+            <img src="screens/fullstack.jpg" class="card-img-top" alt="Fullstack">
+            <div class="card-body">
+              <h5 class="card-title">Full stack development notes</h5>
+              <p class="card-text">
+                My notes for "full stack developer", and some other things.
+                <br>
+                Here I am going to put links to things that are useful to me in my professional development.
+                <br>
+                It is addressed to myself, but if it works for you, if it is useful to you, welcome!
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/apuntes_full_stack_developer"
+              class="btn btn-primary mt-auto" target='_blank'>Full stack dev!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Get your motor runnin'...
+
+            </div>
+            <img src="screens/harley.jpg" class="card-img-top" alt="Harley">
+            <div class="card-body">
+              <h5 class="card-title">Harley Davidson Argentina tips & tricks</h5>
+              <p class="card-text">
+                Alternative parts list for Harley Davidson Sportster available in Argentina.
+                <br>
+                Given the country's situation, with constant import bans, it becomes difficult to keep an imported
+                motorcycle running.
+                <br>
+                That's why I compiled, over more than 16 years, a list of alternative parts to keep the Harley
+                Davidson Sportster running in optimal condition.
+                <br>
+                This project starts in 2004, when I bought my first HD XL883.
+                <br>
+                Spanish content ahead.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/harley_alternativas_argentina"
+              class="btn btn-primary mt-auto" target='_blank'>Get your motor runnin'</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Premier Warlord SpeedHack
+            </div>
+            <img src="screens/warlord.jpg" class="card-img-top" alt="Warlord Game">
+            <div class="card-body">
+              <h5 class="card-title">Premier Warlord</h5>
+              <p class="card-text">
+                A speedhack game of evil shooting action, winner most evil category 2007.
+                <br>
+                This game was made in only 24 hs in C++ to fullfil the SpeedHack 2007 rules, and WON most evil game
+                that year.
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/warlord_premier_mr_bush" class="btn btn-primary mt-auto"
+              target='_blank'>Game available!</a>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end row -->
+
+      <!-- row -->
+      <BR>
+      <div class="row">
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Thanks for reading!
+            </div>
+            <img src="screens/krono.jpg" class="card-img-top" alt="Krono">
+            <div class="card-body">
+              <h5 class="card-title">More projects coming soon!</h5>
+              <p class="card-text">
+                Thank you for reading my page.
+                <br>
+                I always have new stuff coming up, so check it often!
+                <br>
+                Don't hesitate to contact me! On GitHub, LinkedIn, etc!
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/" class="btn btn-primary mt-auto" target='_blank'>Coming
+              soon!</a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-header">
+              Thanks for reading!
+            </div>
+            <img src="screens/krono.jpg" class="card-img-top" alt="Krono">
+            <div class="card-body">
+              <h5 class="card-title">More projects coming soon!</h5>
+              <p class="card-text">
+                Thank you for reading my page.
+                <br>
+                I always have new stuff coming up, so check it often!
+                <br>
+                Don't hesitate to contact me! On GitHub, LinkedIn, etc!
+              </p>
+
+            </div>
+            <a href="https://github.com/alvarogonzalezferrer/" class="btn btn-primary mt-auto" target='_blank'>Coming
+              soon!</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+    </div>
+    <br><br><br><br>
+    <div class="container">
+
+      <h2>Donations</h2>
+      <p>
+        Did you found my source code useful? Making this software takes a lot of time, effort, and research.
+      </p>
+      <p>
+        If you want to help me continue with my work, you can hire me, or donate via Bitcoin to my address, everything
+        helps, it
+        can be pennies, it doesn't matter how low the donation, is always welcome!!
+      </p>
+      <p style="font-weight:bold;">
+        BTC: 33Xh8YBQsMW8LGrnRR5wgEKXNzoaE5C95Q
+      </p>
+      <p>
+        <img style="width:50%;" src="btc/wallet.png" class="card-img-top" alt="33Xh8YBQsMW8LGrnRR5wgEKXNzoaE5C95Q">
+      </p>
+      <p>
+        Thanks for your support!
+      </p>
+    </div>
+
+    <!-- <br>Bonus track :P<br> -->
+
+    <!-- TODO do this canvas responsive to screen size, maybe add some mini game custom made -->
+    <!-- <canvas id="responsive-canvas" style="width: 100%;"></canvas> -->
+
+    <!-- TODO DEBUG DISABLED FOR NOW
+                  <script>
+                  // TODO resize properly , this was done in a rush : https://stackoverflow.com/questions/1664785/resize-html5-canvas-to-fit-window
+                  // TODO move all this to a proper .js file
+                  // TODO read this carefully and fix the resize : https://webglfundamentals.org/webgl/lessons/webgl-anti-patterns.html
+                  // TODO useful: https://webgl2fundamentals.org/
+                  // TODO useful: https://webglfundamentals.org/
+
+                  // matrix effect on canvas
+                  var c = document.getElementById("responsive-canvas");
+                  // set height according to size of window
+                  // TODO - this needs to adapt if the window chances size!!
+                  c.height = c.width * 0.75; // ratio 800x600 screen 0,75
+
+                  var ctx = c.getContext("2d");
+
+                  // mensaje de acerca de...
+                  var mensaje = [
+                    "Álvaro 'Kronoman' González",
+                    "Since 1982, doing quality software.",
+                    "El artesano del software.",
+                    "En memoria de mi querido padre.",
+                    "En memoria de mi querido padre.",
+                    "",
+                    "HENDERSON",
+                    "ARGENTINA",
+                    "",
+                    ""
+                  ];
+
+                  var mensaje_i = 0; // mensaje actual
+                  var mensaje_d = 90; // duracion en frames de cada mensaje
+                  var mensaje_t = mensaje_d; // temporizador de mensaje
+                  // posicion y movimiento del mensaje
+                  var m_x = 0;
+                  var m_y = 0;
+                  var m_dx = Math.random()*10 + 4;
+                  var m_dy = Math.random()*20 + 4;
+
+                  // letras para el fondo
+                  var matrix = "01";
+                  //convertir la cadena en un array de caracteres
+                  matrix = matrix.split("");
+
+                  var font_size = c.width/40;
+                  var columns = c.width/font_size; // columnas para la lluvia
+
+                  // array de gotas, uno por cada columna
+                  var drops = [];
+                  //x = coordenada x
+                  //1 = coordenada Y inicial, la misma para cada gota al principio
+                  for(var x = 0; x < columns; x++)
+                  drops[x] = 1;
+
+                  // texto de creditos
+                  var gradient = ctx.createLinearGradient(0, 0, c.width, c.height); // gradiente en toda la pantalla
+                  gradient.addColorStop("0"," magenta");
+                  gradient.addColorStop("0.5", "blue");
+                  gradient.addColorStop("1.0", "green");
+
+                  // entrar y salir de fullscreen
+                  // https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API
+                  function toggleFullScreen()
+                  {
+                    if (!document.fullscreenElement)
+                    document.documentElement.requestFullscreen();
+                    else
+                    if (document.exitFullscreen)
+                    document.exitFullscreen();
+                  }
+
+                  // pedir entrar full screen si hace click en el canvas
+                  c.addEventListener('click', function() { toggleFullScreen(); }, false);
+
+                  //dibujar la lluvia
+                  function draw()
+                  {
+                    //fondo negro para canvas
+                    //transparente para dejar una estela
+                    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+                    ctx.fillRect(0, 0, c.width, c.height);
+
+                    ctx.fillStyle = "#0A0"; //texto verde
+                    ctx.font = font_size + "px arial";
+
+                    //loop de gotas
+                    for(var i = 0; i < drops.length; i++)
+                    {
+                      //caracter al azar
+                      var text = matrix[Math.floor(Math.random()*matrix.length)];
+                      //x = i*font_size, y = tamano gotas[i]*font_size
+                      ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                      // mandar la gota arriba al azar cuando llega abajo
+                      // agregar azar hace que las gotas se dispersen
+                      if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                      drops[i] = 0;
+
+                      //bajar la coordenada Y
+                      drops[i]++;
+                    }
+
+                    // texto krono
+                    ctx.font = (c.width/40) + "px Verdana";
+                    ctx.fillStyle = gradient;
+                    ctx.fillText(mensaje[mensaje_i], m_x, m_y); // estela con gradiente
+                    mensaje_t--;
+                    if (mensaje_t<1)
+                    {
+                      mensaje_t = mensaje_d;
+                      mensaje_i++;
+                      if (mensaje_i>mensaje.length-1)
+                      mensaje_i=0;
+                    }
+
+                    m_x += m_dx;
+                    m_y += m_dy;
+
+                    // bounce
+                    if (m_x > c.width - ctx.measureText(mensaje[mensaje_i]).width)
+                    m_dx = -(Math.random()*15  + 2);
+
+                    if (m_y > c.height)
+                    m_dy = -(Math.random()*15 + 2);
+
+                    if (m_x < 0)
+                    m_dx = Math.random()*15 + 2;
+
+                    if (m_y < 0)
+                    m_dy = Math.random()*15 + 2;
+
+                    // escribir en la nueva posicion en blanco, asi se lee
+                    //ctx.strokeStyle = 'white';
+                    ctx.fillStyle = "white";
+                    ctx.fillText(mensaje[mensaje_i], m_x, m_y);
+                    //ctx.strokeText(mensaje[mensaje_i], m_x, m_y);
+                  }
+
+
+                  setInterval(draw, 35); // start the show!
+
+                  </script>
+                -->
+
+  </div>
+</body>
+
+</html>
